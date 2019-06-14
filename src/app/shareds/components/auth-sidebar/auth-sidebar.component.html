@@ -1,0 +1,21 @@
+<div class="main-sidebar sidebar-style-2">
+  <aside id="sidebar-wrapper">
+    <div class="sidebar-brand">
+      <a href="index.html">E-Courseware</a>
+    </div>
+    <div class="sidebar-brand sidebar-brand-sm">
+      <a href="index.html">EC</a>
+    </div>
+    <ul class="sidebar-menu">
+      <li class="menu-header">Dashboard</li>   
+      <li routerLinkActive= "active"><a class="nav-link" [routerLink] = "['/' , AppURL.Authen , AuthURL.Dashboard]"><i class="fas fa-fire"></i> <span>Dashboard</span></a></li>
+      <li class="dropdown" routerLinkActive= "active">
+          <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>User</span></a>
+          <ul class="dropdown-menu">
+            <li routerLinkActive= "active"><a [routerLink] = "['/' , AppURL.Authen , AuthURL.Members]">Manage User</a></li> 
+            <li routerLinkActive= "active"><a [routerLink] = "['/' , AppURL.Authen , AuthURL.MembersCreate]">Add User</a></li> 
+          </ul>
+        </li>
+    </ul>
+  </aside>
+</div>
