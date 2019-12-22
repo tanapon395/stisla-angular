@@ -19,7 +19,7 @@ export class AuthSidebarComponent implements OnInit {
     private router:Router,    
     private iziToast: Ng2IzitoastService ,
   ) { 
-    // this.initialloadUserLogin();
+    this.initialloadUserLogin();
   }
   AppURL = AppURL;
   AuthURL = AuthURL;
